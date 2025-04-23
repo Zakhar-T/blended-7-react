@@ -1,9 +1,9 @@
 import style from './StatisticsItem.module.css';
 
-const StatisticsItem = ({ title, total }) => {
+const StatisticsItem = ({ icon, title, total }) => {
   return (
     <>
-      {/* icon */}
+      {icon}
       <span className={style.counter}>{total}</span>
       <p className={style.text}>{title}</p>
     </>
