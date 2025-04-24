@@ -9,6 +9,7 @@ import Statistics from './components/Statistics/Statistics';
 import blogCardData from './data/article.json';
 import statsData from './data/stats.json';
 import forbesData from './data/forbes.json';
+import transactionsData from './data/transactions.json';
 
 export const App = () => {
   return (
@@ -32,7 +33,7 @@ export const App = () => {
         <ForbesList list={forbesData} />
 
         <Heading title="Task 4 Crypto history" top bottom />
-        <CryptoHistory />
+        <CryptoHistory items={transactionsData} />
       </Container>
     </Section>
   );
